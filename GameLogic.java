@@ -122,47 +122,47 @@ public class GameLogic implements PlayableLogic {
             }
         }
 
-        board[5][3] = new Pawn(defender, "D1", new Position(5, 3), "♙");
-        board[4][4] = new Pawn(defender, "D2", new Position(4, 4), "♙");
-        board[5][4] = new Pawn(defender, "D3", new Position(5, 4), "♙");
-        board[6][4] = new Pawn(defender, "D4", new Position(6, 4), "♙");
-        board[3][5] = new Pawn(defender, "D5", new Position(3, 5), "♙");
-        board[4][5] = new Pawn(defender, "D6", new Position(4, 5), "♙");
-        board[6][5] = new Pawn(defender, "D8", new Position(6, 5), "♙");
-        board[7][5] = new Pawn(defender, "D9", new Position(7, 5), "♙");
-        board[4][6] = new Pawn(defender, "D10", new Position(4, 6), "♙");
-        board[5][6] = new Pawn(defender, "D11", new Position(5, 6), "♙");
-        board[6][6] = new Pawn(defender, "D12", new Position(6, 6), "♙");
-        board[5][7] = new Pawn(defender, "D13", new Position(5, 7), "♙");
+        board[5][3] = new Pawn(defender, "D1", new Position(5, 3), "\u2659");
+        board[4][4] = new Pawn(defender, "D2", new Position(4, 4), "\u2659");
+        board[5][4] = new Pawn(defender, "D3", new Position(5, 4), "\u2659");
+        board[6][4] = new Pawn(defender, "D4", new Position(6, 4), "\u2659");
+        board[3][5] = new Pawn(defender, "D5", new Position(3, 5), "\u2659");
+        board[4][5] = new Pawn(defender, "D6", new Position(4, 5), "\u2659");
+        board[6][5] = new Pawn(defender, "D8", new Position(6, 5), "\u2659");
+        board[7][5] = new Pawn(defender, "D9", new Position(7, 5), "\u2659");
+        board[4][6] = new Pawn(defender, "D10", new Position(4, 6), "\u2659");
+        board[5][6] = new Pawn(defender, "D11", new Position(5, 6), "\u2659");
+        board[6][6] = new Pawn(defender, "D12", new Position(6, 6), "\u2659");
+        board[5][7] = new Pawn(defender, "D13", new Position(5, 7), "\u2659");
 
         ///////////////////attacker///////////////////////////////////////////////////
-        board[3][0] = new Pawn(attacker, "A1", new Position(3, 0), "♟");
-        board[4][0] = new Pawn(attacker, "A2", new Position(4, 0), "♟");
-        board[5][0] = new Pawn(attacker, "A3", new Position(5, 0), "♟");
-        board[6][0] = new Pawn(attacker, "A4", new Position(6, 0), "♟");
-        board[7][0] = new Pawn(attacker, "A5", new Position(7, 0), "♟");
-        board[5][1] = new Pawn(attacker, "A6", new Position(5, 1), "♟");
+        board[3][0] = new Pawn(attacker, "A1", new Position(3, 0), "\u265F");
+        board[4][0] = new Pawn(attacker, "A2", new Position(4, 0), "\u265F");
+        board[5][0] = new Pawn(attacker, "A3", new Position(5, 0), "\u265F");
+        board[6][0] = new Pawn(attacker, "A4", new Position(6, 0), "\u265F");
+        board[7][0] = new Pawn(attacker, "A5", new Position(7, 0), "\u265F");
+        board[5][1] = new Pawn(attacker, "A6", new Position(5, 1), "\u265F");
 
-        board[0][3] = new Pawn(attacker, "A7", new Position(0, 3), "♟");
-        board[0][4] = new Pawn(attacker, "A9", new Position(0, 4), "♟");
-        board[0][5] = new Pawn(attacker, "A11", new Position(0, 5), "♟");
-        board[0][6] = new Pawn(attacker, "A15", new Position(0, 6), "♟");
-        board[0][7] = new Pawn(attacker, "A17", new Position(0, 7), "♟");
-        board[1][5] = new Pawn(attacker, "A12", new Position(1, 5), "♟");
+        board[0][3] = new Pawn(attacker, "A7", new Position(0, 3), "\u265F");
+        board[0][4] = new Pawn(attacker, "A9", new Position(0, 4), "\u265F");
+        board[0][5] = new Pawn(attacker, "A11", new Position(0, 5), "\u265F");
+        board[0][6] = new Pawn(attacker, "A15", new Position(0, 6), "\u265F");
+        board[0][7] = new Pawn(attacker, "A17", new Position(0, 7), "\u265F");
+        board[1][5] = new Pawn(attacker, "A12", new Position(1, 5), "\u265F");
 
-        board[10][3] = new Pawn(attacker, "A8", new Position(10, 3), "♟");
-        board[10][4] = new Pawn(attacker, "A10", new Position(10, 4), "♟");
-        board[10][5] = new Pawn(attacker, "A14", new Position(10, 5), "♟");
-        board[10][6] = new Pawn(attacker, "A16", new Position(10, 6), "♟");
-        board[10][7] = new Pawn(attacker, "A18", new Position(10, 7), "♟");
-        board[9][5] = new Pawn(attacker, "A13", new Position(9, 5), "♟");
+        board[10][3] = new Pawn(attacker, "A8", new Position(10, 3), "\u265F");
+        board[10][4] = new Pawn(attacker, "A10", new Position(10, 4), "\u265F");
+        board[10][5] = new Pawn(attacker, "A14", new Position(10, 5), "\u265F");
+        board[10][6] = new Pawn(attacker, "A16", new Position(10, 6), "\u265F");
+        board[10][7] = new Pawn(attacker, "A18", new Position(10, 7), "\u265F");
+        board[9][5] = new Pawn(attacker, "A13", new Position(9, 5), "\u265F");
 
-        board[5][9] = new Pawn(attacker, "A19", new Position(5, 9), "♟");
-        board[3][10] = new Pawn(attacker, "A20", new Position(3, 10), "♟");
-        board[4][10] = new Pawn(attacker, "A21", new Position(4, 10), "♟");
-        board[5][10] = new Pawn(attacker, "A22", new Position(5, 10), "♟");
-        board[6][10] = new Pawn(attacker, "A23", new Position(6, 10), "♟");
-        board[7][10] = new Pawn(attacker, "A24", new Position(7, 10), "♟");
+        board[5][9] = new Pawn(attacker, "A19", new Position(5, 9), "\u265F");
+        board[3][10] = new Pawn(attacker, "A20", new Position(3, 10), "\u265F");
+        board[4][10] = new Pawn(attacker, "A21", new Position(4, 10), "\u265F");
+        board[5][10] = new Pawn(attacker, "A22", new Position(5, 10), "\u265F");
+        board[6][10] = new Pawn(attacker, "A23", new Position(6, 10), "\u265F");
+        board[7][10] = new Pawn(attacker, "A24", new Position(7, 10), "\u265F");
 
         board[5][5] = new King(defender, new Position(5, 5));
         kingsPos = new Position(5, 5);
