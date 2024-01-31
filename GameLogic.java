@@ -103,8 +103,8 @@ public class GameLogic implements PlayableLogic {
     @Override
     public void undoLastMove() {
         if (!this.historyBoard.isEmpty()) {
-            this.board = this.historyBoard.removeLast();
-            this.boardpositions = this.historyboardpositions.removeLast();
+            this.board = this.historyBoard.remove(this.historyBoard.size() - 1);
+            this.boardpositions = this.historyboardpositions.remove(this.historyBoard.size() - 1);
             this.currPlayer = !this.currPlayer;
 
         }
@@ -380,7 +380,7 @@ public class GameLogic implements PlayableLogic {
         int howManyDefender = 1;
         int howManyAttacker = 0;
        if(getPieceAtPosition(kingsPos).getPositionsLength()>1) {
-           defenderPieces.addFirst(getPieceAtPosition(kingsPos));
+           defenderPieces.add(0, getPieceAtPosition(kingsPos));
            k++;
        }
         for (int i = 0; i < Board_size; i++) {
@@ -465,7 +465,7 @@ public class GameLogic implements PlayableLogic {
         pieces.sort(compareSteps);
 
         for (ConcretePiece p : pieces) {
-            if (p == pieces.getLast()) System.out.print(p.getName() + ": " + p.calcDistance() + " squares");
+            if (p == pieces.get(pieces.size() - 1)) System.out.print(p.getName() + ": " + p.calcDistance() + " squares");
             else System.out.println(p.getName() + ": " + p.calcDistance() + " squares");
         }
 
@@ -511,7 +511,7 @@ public class GameLogic implements PlayableLogic {
             Position currpos = usedpositions.get(i);
             System.out.println(currpos.toString() + currpos.stepppedon.size() + " pieces");
         }
-        Position currpos = usedpositions.getLast();
+        Position currpos = usedpositions.get(usedpositions.size() - 1);
         System.out.print(currpos.toString() + currpos.stepppedon.size() + " pieces");
         print75();
     }
