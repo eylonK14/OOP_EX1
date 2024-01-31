@@ -1,8 +1,8 @@
 /**
  * The Piece interface defines the characteristics of a game piece in a chess-like game.
  * Implementing classes should provide information about the player who owns the piece
- * and return a Unicode character representing the type of the piece (e.g., ♟ for pawn,
- * ♞ for knight, ♜ for rook, etc.).
+ * and return a Unicode character representing the type of the piece (e.g., \u265F for pawn,
+ * \u265E for knight, \u265C for rook, etc.).
  */
 public interface Piece {
 // DONT TOUCH
@@ -17,7 +17,7 @@ public interface Piece {
      * Get a Unicode character representing the type of the game piece.
      *  <a href="https://en.wikipedia.org/wiki/Chess_symbols_in_Unicode">...</a>
      * @return A Unicode character representing the type of this game piece
-     *         (e.g., ♟ for pawn, ♞ for knight, ♜ for rook, etc.).
+     *         (e.g., \u265F for pawn, \u265E for knight, \u265C for rook, etc.).
      *
      */
     String getType();
