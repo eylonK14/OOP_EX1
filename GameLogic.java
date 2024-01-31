@@ -439,7 +439,7 @@ public class GameLogic implements PlayableLogic {
         pawns.sort(compareKills);
 
         for (Pawn p : pawns) {
-            if (p == pawns.getLast()) System.out.print(p.getName() + ": " + p.getKillCount() + " kills");
+            if (p == pawns.get(pawns.size() - 1)) System.out.print(p.getName() + ": " + p.getKillCount() + " kills");
             else System.out.println(p.getName() + ": " + p.getKillCount() + " kills");
         }
 
